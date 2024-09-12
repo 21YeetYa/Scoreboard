@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scoreboard</title>
+    <link rel="stylesheet" href="asset/score-style.css" />
+  </head>
+  <body>
+    <div class="scoreboard">
+      <h1>Scoreboard</h1>
+      <div class="teams">
+        <div class="team" id="team1">
+          <h2>DrySquad</h2>
+          <button class="change-name" onclick="changeName('team1')">
+            Change name...
+          </button>
+          <div class="score" id="score1">11</div>
+          <div>
+            <button onclick="increaseScore('score1')">+</button>
+            <button onclick="decreaseScore('score1')">-</button>
+          </div>
+        </div>
+        <div class="team" id="team2">
+          <h2>KaniSquad</h2>
+          <button class="change-name" onclick="changeName('team2')">
+            Change name...
+          </button>
+          <div class="score" id="score2">23</div>
+          <div>
+            <button onclick="increaseScore('score2')">+</button>
+            <button onclick="decreaseScore('score2')">-</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>
